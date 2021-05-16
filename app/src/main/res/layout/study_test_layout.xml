@@ -1,4 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-  
-</layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:id="@+id/TableLayoutCalcGr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--タスクグループ-->
+        <!--1行目 タイトル-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="今日のタスク"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+        <!--2行目 タスク1-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No.1" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="クラス設計" />
+
+            <TextView
+                android:id="@+id/sumTimeStudy01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sumTimeStudy01" />
+        </TableRow>
+        <!--3行目 タスク2-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </TableRow>
+
+        <!--空白1-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/blank01"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:text="-----" />
+        </TableRow>
+
+
+        <!--計測用ボタングループ-->
+        <!--1行目 タイトル-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titleCalcButtonGr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="計測ボタン"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!--2行目 時刻表示-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTimestampStart"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:gravity="center"
+                android:text="@string/timestampstart" />
+
+            <TextView
+                android:id="@+id/textTimestampStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="@string/timestampstop" />
+
+            <TextView
+                android:id="@+id/timeDiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="@string/timediff" />
+        </TableRow>
+
+        <!--3行目 開始、停止、追加ボタン-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="clip_vertical"
+            android:gravity="center|clip_vertical">
+
+            <Button
+                android:id="@+id/buttonStart"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="start"
+                app:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="stop"
+                app:backgroundTint="#E91E63" />
+
+            <Button
+                android:id="@+id/buttonAdd"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add"
+                app:backgroundTint="#3F51B5" />
+
+        </TableRow>
+
+
+    </TableLayout>
+</layout></TableLayout>
